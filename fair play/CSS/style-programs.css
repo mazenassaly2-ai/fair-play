@@ -1,0 +1,285 @@
+:root {
+    --primary-color: rgb(197, 155, 39);   
+    --secondary-color: rgb(168, 130, 31); 
+    --dark-bg: rgb(27, 42, 74);           
+    --light-bg: rgb(248, 249, 250);       
+    --text-dark: rgb(15, 28, 63);         
+    --text-light: rgb(255, 255, 255);     
+    --gray-color: rgb(108, 117, 125);     
+    --border-color: rgb(224, 224, 224);   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: -apple-system,'Helvetica Neue',Arial,sans-serif;
+}
+
+body {
+    background-color: var(--text-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 40px;
+    color: var(--dark-bg);
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.section-subtitle {
+    color: var(--gray-color);
+    margin-bottom: 48px;
+    font-size: 17.6px;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+/* Navbar */
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 9.6px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-bg);
+    padding: 16px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25.6px;
+    font-weight: bold;
+    color: var(--text-light);
+    text-decoration: none;
+}
+.nav-logo {
+    width: 65px; 
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 6px; 
+    border-radius: 8px; 
+}
+.navbar .logo span {
+    color: var(--primary-color);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.navbar ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+
+/* .Hero Section */
+.programs-hero {
+    position: relative;
+    padding: 128px 5%;
+    color: var(--text-light);
+    border-bottom: 5px solid var(--primary-color);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-backgrounds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.bg-img {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(27, 42, 74, 0.4), rgba(27, 42, 74, 0.4));
+    z-index: 2;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 3; 
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 19.2px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.program-card {
+    background: var(--light-bg);
+    padding: 32px;
+    border-radius: 8px;
+    border-top: 4px solid var(--primary-color);
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.program-card h3 {
+    color: var(--dark-bg);
+    margin-bottom: 16px;
+    font-size: 20.8px;
+}
+
+/* 5.Table Styling */
+.table-container {
+    
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.schedule-table thead {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 18px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.schedule-table th {
+    font-size: 17.6px;
+    letter-spacing: 1px;
+}
+
+.schedule-table td {
+    font-size: 16px;
+}
+
+.schedule-table .day-col {
+    font-weight: bold;
+    color: var(--dark-bg);
+    background-color: rgb(240, 244, 248);
+    text-transform: uppercase;
+}
+
+.schedule-table .time {
+    display: block;
+    font-size: 13.6px;
+    color: var(--gray-color);
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+.match-day td {
+    background-color: rgb(253, 242, 242); 
+}
+
+.weekend-event {
+    color: rgb(198, 40, 40); 
+    font-size: 17.6px;
+}
+
+.rest-day {
+    background-color: rgb(232, 245, 233); 
+    color: rgb(46, 125, 50); 
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*footer*/
+footer {
+    background-color: var(--dark-bg);
+    color: rgb(204, 204, 204);
+    text-align: center;
+    padding: 32px;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+

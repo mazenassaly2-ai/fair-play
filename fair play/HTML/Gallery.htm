@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Fair Play Academy</title>
+    <link rel="stylesheet" href="../CSS/style-Gallery.css">
+</head>
+
+<body>
+
+    <!--  Navbar -->
+<header class="navbar">
+        <a href="index.html" class="logo">
+            <img src="../Image/logo.png" alt="FPA Logo" class="nav-logo">
+            FPA <span>Barja</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html" class="active">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </nav>
+        <a href="join.html" class="btn">Join the Season</a>
+
+    </header>
+    <!-- Hero Section -->
+   <section class="programs-hero">
+        
+        <div class="hero-backgrounds">
+        
+            <div class="bg-img" style="background-image: url('../Image/gallery1.jpg');"></div>
+            <div class="bg-img" style="background-image: url('../Image/gallery 3.jpg');"></div>
+            <div class="bg-img" style="background-image: url('../Image/gallery 2.jpg');"></div>
+        
+            <div class="hero-overlay"></div>
+        </div>
+
+    
+        <div class="container text-center hero-content">
+            <h1>Our Training Programs</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, minus.</p>
+        </div>
+    </section>
+<!-- قسم معرض الصور (3 أقسام تحت بعض) -->
+<section class="section gallery-preview bg-light">
+    <div class="container">
+        <h2 class="text-center">FPA Gallery</h2>
+        <p class="section-subtitle text-center">A glimpse into our academy's journey</p>
+
+        <!-- القسم الأول: التدريبات -->
+        <div class="gallery-category">
+            <div class="category-header">
+                <h3>Tophy Sessions</h3>
+                <a href="#" class="btn-more">See More &rarr;</a>
+            </div>
+            <div class="category-grid">
+                <div class="img-box">
+                    <img src="../Image/t1.jpg" alt="Tophy 1">
+                </div>
+                <div class="img-box">
+                    <img src="../Image/t2.jpg" alt="Tophy 2">
+                </div>
+                <div class="img-box hide-on-mobile">
+                    <img src="../Image/t3.jpg" alt="Tophy 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثاني: المباريات -->
+        <div class="gallery-category">
+            <div class="category-header">
+                <h3>Training Sessions</h3>
+                <a href="#" class="btn-more">See More &rarr;</a>
+            </div>
+            <div class="category-grid">
+                <div class="img-box">
+                    <img src="../Image/train 1.jpg" alt="Training 1">
+                </div>
+                <div class="img-box">
+                    <img src="../Image/train 2.jpg" alt="Training 2">
+                </div>
+                <div class="img-box hide-on-mobile">
+                    <img src="../Image/train.jpg" alt="Training 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثالث: الفعاليات والبطولات -->
+        <div class="gallery-category">
+            <div class="category-header">
+                <h3>Coaches</h3>
+                <a href="#" class="btn-more">See More &rarr;</a>
+            </div>
+            <div class="category-grid">
+                <div class="img-box">
+                    <img src="../Image/coach1.jpg" alt="coach 1">
+                </div>
+                <div class="img-box">
+                    <img src="../Image/coach 3.jpg" alt="coach 2">
+                </div>
+                <div class="img-box hide-on-mobile">
+                    <img src="../Image/coach 2.png" alt="coach 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-category">
+            <div class="category-header">
+                <h3>our team</h3>
+                <a href="#" class="btn-more">See More &rarr;</a>
+            </div>
+            <div class="category-grid">
+                <div class="img-box">
+                    <img src="../Image/2010.jpg" alt="2010">
+                </div>
+                <div class="img-box">
+                    <img src="../Image/2014.jpg" alt="2014">
+                </div>
+                <div class="img-box hide-on-mobile">
+                    <img src="../Image/2018.jpg" alt="2018">
+                </div>
+            </div>
+        </div>
+        <div class="gallery-category">
+            <div class="category-header">
+                <h3>matches</h3>
+                <a href="#" class="btn-more">See More &rarr;</a>
+            </div>
+            <div class="category-grid">
+                <div class="img-box">
+                    <img src="../Image/match 1.jpg" alt="match 1">
+                </div>
+                <div class="img-box">
+                    <img src="../Image/match 2.jpg" alt="match 2">
+                </div>
+                <div class="img-box hide-on-mobile">
+                    <img src="../Image/match 3.jpg" alt="match 3">
+                </div>
+            </div>
+        </div>
+   
+    </div>
+<!-- الأزرار -->
+<div class="gallery-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="trainings">Trainings</button>
+    <button class="filter-btn" data-filter="matches">Matches</button>
+</div>
+
+<!-- شبكة الصور -->
+<div class="gallery-grid">
+    <!-- صورة تدريب -->
+    <div class="gallery-item" data-category="trainings">
+        <img src="../IMG/t1.jpg" alt="Training">
+    </div>
+    
+    <!-- صورة مباراة -->
+    <div class="gallery-item" data-category="matches">
+        <img src="../IMG/t2.jpg" alt="Match">
+    </div>
+</div>
+</section>
+
+    <!-- (Footer) -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Fair Play Academy (FPA). All rights reserved.</p>
+            <div class="social-footer">
+                <a href="https://www.instagram.com/fairplayacademy/?hl=en" target="_blank">Instagram</a>
+                <span class="separator">|</span>
+                <a href="https://www.facebook.com/profile.php?id=100086580495397" target="_blank">Facebook</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
